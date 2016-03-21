@@ -1,4 +1,4 @@
-# Codebook Marketing Customer Value Analysis
+## Codebook Marketing Customer Value Analysis
 
 ### title: Codebook Customer Value Analysis
 ##### date: March 2016
@@ -78,13 +78,15 @@ There are 24 columns of data.
 ##Description of the variables in the tidydata.txt file
 
 #### State 
-+ Arizona | California |    Nevada |    Oregon  | Washington 
-+  1703   |    3150    |      882  |     2601   |     798
+Arizona | California |    Nevada |    Oregon  | Washington 
+-----------------------------------------------------------
+ 1703   |    3150    |      882  |     2601   |     798
 
 #### Customer.Lifetime.Value
 +>summary(myfile$Customer.Lifetime.Value)
-+ Min. | 1st Qu. | Median |   Mean | 3rd Qu. |    Max. 
-+ 1898 |  3994   |  5780  |   8005 |   8962  |   83330 
+ Min. | 1st Qu. | Median |   Mean | 3rd Qu. |    Max. 
+ ----------------------------------------------------------
+ 1898 |  3994   |  5780  |   8005 |   8962  |   83330 
 
 #### Response                     
 
