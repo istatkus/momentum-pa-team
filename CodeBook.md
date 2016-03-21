@@ -109,7 +109,8 @@ summary(myfile$Customer.Lifetime.Value)
 #### EmploymentStatus    
 | Disabled  | Employed  |Medical Leave  | Retired  | Unemployed |
 |----------:|----------:|--------------:|---------:|------------|
-| 405       |     5698  |         432   |     282  |      2317  |  
+| 405       |     5698  |         432   |     282  |      2317  | 
+image:![Employment Status and Claim]
 
 #### Gender    
 |F     |M     |
@@ -124,7 +125,7 @@ summary(myfile$Customer.Lifetime.Value)
 |Rural    |Suburban |  Urban  | 
 |--------:|--------:|--------:|
 |1773     |  5779   |  1582   |  
-image:![https://github.com/istatkus/momentum-pa-team/blob/master/mmBox_Loc_claim.PNG]
+image:![Boxplot Location and Total Claim](https://github.com/istatkus/momentum-pa-team/blob/master/mmBox_Loc_claim.PNG)
 
 #### Marital.Status 
 |Divorced|Married | Single | 
@@ -141,7 +142,7 @@ image:![https://github.com/istatkus/momentum-pa-team/blob/master/mmBox_Loc_claim
 #### Sales.Channel              
 #### Total.Claim.Amount   
 
-image:![https://github.com/istatkus/momentum-pa-team/blob/master/mmhist_claim.PNG]
+image:![Histogram Total Claim](https://github.com/istatkus/momentum-pa-team/blob/master/mmhist_claim.PNG)
 #### Vehicle.Class                
 #### Vehicle.Size                
 
