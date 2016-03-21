@@ -83,7 +83,8 @@ There are 24 columns of data.
 | 1703    |    3150    |   882  |     2601|     798    |
 
 #### Customer.Lifetime.Value  
-summary(myfile$Customer.Lifetime.Value)  
+summary(myfile$Customer.Lifetime.Value) 
+
 |Min. | 1st Qu. | Median |   Mean | 3rd Qu. |    Max. |
 |----:|--------:|-------:|-------:|--------:|---------|
 |1898 |  3994   |  5780  |   8005 |   8962  |   83330 |
@@ -99,20 +100,34 @@ summary(myfile$Customer.Lifetime.Value)
 | 5568  |   2742 |      824 | 
 
 #### Education                    
+|Bachelor  |   College |   Doctor | High School or Below | Master  |
+|---------:|----------:|---------:|---------------------:|--------:|
+|2748  |    2681   |      342 |        2622| 741|  
 
 #### Effective.To.Date            
 
 #### EmploymentStatus    
+| Disabled  | Employed  |Medical Leave  | Retired  | Unemployed |
+|----------:|----------:|--------------:|---------:|------------|
+| 405       |     5698  |         432   |     282  |      2317  |  
 
 #### Gender    
-
+|F     |M     |
+|-----:|-----:|
+|4658  | 4476 | 
 #### Income  
 | Min. | 1st Qu.| Median |  Mean  | 3rd Qu. |  Max.  | 
 |-----:|-------:|-------:|-------:|--------:|-------:|
 | 0    |   0    |  33890 | 37660  | 62320   | 99980  |
 
-#### Location.Code                
-#### Marital.Status               
+#### Location.Code   
+|Rural    |Suburban |  Urban  | 
+|--------:|--------:|--------:|
+|1773     |  5779   |  1582   |   
+#### Marital.Status 
+|Divorced|Married | Single | 
+|-------:|-------:|-------:|
+|1369    | 5298   |  2467  |   
 #### Monthly.Premium.Auto         
 #### Months.Since.Last.Claim      
 #### Months.Since.Policy.Inception
@@ -121,10 +136,10 @@ summary(myfile$Customer.Lifetime.Value)
 #### Policy.Type                  
 #### Policy                       
 #### Renew.Offer.Type            
- Sales.Channel              
- Total.Claim.Amount           
- Vehicle.Class                
- Vehicle.Size                
+#### Sales.Channel              
+#### Total.Claim.Amount           
+#### Vehicle.Class                
+#### Vehicle.Size                
 
  
  
