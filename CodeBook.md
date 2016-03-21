@@ -75,38 +75,44 @@ There are 24 columns of data.
 12. Step 12 write it out
 
 
-##Description of the variables in the tidydata.txt file
+##Description of the variables in the tidydata.txt file  
 
-#### State 
+#### State   
 Arizona | California |    Nevada |    Oregon  | Washington 
 -----------------------------------------------------------
  1703   |    3150    |      882  |     2601   |     798
 
-#### Customer.Lifetime.Value
-+>summary(myfile$Customer.Lifetime.Value)
- Min. | 1st Qu. | Median |   Mean | 3rd Qu. |    Max. 
- ----------------------------------------------------------
- 1898 |  3994   |  5780  |   8005 |   8962  |   83330 
+#### Customer.Lifetime.Value  
+summary(myfile$Customer.Lifetime.Value)  
+Min. | 1st Qu. | Median |   Mean | 3rd Qu. |    Max. 
+----------------------------------------------------------
+1898 |  3994   |  5780  |   8005 |   8962  |   83330 
 
 #### Response                     
 
 #### Coverage    
 
 #### Education                    
- Effective.To.Date            
- EmploymentStatus             
- Gender                      
- Income                     
- Location.Code                
- Marital.Status               
- Monthly.Premium.Auto         
- Months.Since.Last.Claim      
- Months.Since.Policy.Inception
- Number.of.Open.Complaints    
- Number.of.Policies           
- Policy.Type                  
- Policy                       
- Renew.Offer.Type            
+
+#### Effective.To.Date            
+
+#### EmploymentStatus    
+
+#### Gender    
+
+#### Income  
+ Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0       0   33890   37660   62320   99980 
+#### Location.Code                
+#### Marital.Status               
+#### Monthly.Premium.Auto         
+#### Months.Since.Last.Claim      
+#### Months.Since.Policy.Inception
+#### Number.of.Open.Complaints    
+#### Number.of.Policies           
+#### Policy.Type                  
+#### Policy                       
+#### Renew.Offer.Type            
  Sales.Channel              
  Total.Claim.Amount           
  Vehicle.Class                
