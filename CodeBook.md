@@ -110,7 +110,7 @@ summary(myfile$Customer.Lifetime.Value)
 | Disabled  | Employed  |Medical Leave  | Retired  | Unemployed |
 |----------:|----------:|--------------:|---------:|------------|
 | 405       |     5698  |         432   |     282  |      2317  | 
-image:![Employment Status and Claim]
+image:![Employment Status and Claim](https://github.com/istatkus/momentum-pa-team/blob/master/mmbox_Empstatus_Claim.PNG)
 
 #### Gender    
 |F     |M     |
