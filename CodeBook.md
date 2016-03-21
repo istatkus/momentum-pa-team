@@ -137,7 +137,8 @@ summary(myfile$Customer.Lifetime.Value)
 #### Policy                       
 #### Renew.Offer.Type            
 #### Sales.Channel              
-#### Total.Claim.Amount           
+#### Total.Claim.Amount   
+image:!https://github.com/istatkus/momentum-pa-team/blob/master/mmBox_Loc_claim.PNG
 #### Vehicle.Class                
 #### Vehicle.Size                
 
