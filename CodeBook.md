@@ -78,9 +78,9 @@ There are 24 columns of data.
 ##Description of the variables in the tidydata.txt file  
 
 #### State   
-Arizona | California |    Nevada |    Oregon  | Washington 
------------------------------------------------------------
- 1703   |    3150    |      882  |     2601   |     798
+| Arizona | California | Nevada | Oregon  | Washington 
+|--------:|-----------:|-------:|--------:|-------------
+| 1703    |    3150    |   882  |     2601|     798
 
 #### Customer.Lifetime.Value  
 summary(myfile$Customer.Lifetime.Value)  
