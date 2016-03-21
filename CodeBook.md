@@ -123,7 +123,9 @@ summary(myfile$Customer.Lifetime.Value)
 #### Location.Code   
 |Rural    |Suburban |  Urban  | 
 |--------:|--------:|--------:|
-|1773     |  5779   |  1582   |   
+|1773     |  5779   |  1582   |  
+image:![https://github.com/istatkus/momentum-pa-team/blob/master/mmBox_Loc_claim.PNG]
+
 #### Marital.Status 
 |Divorced|Married | Single | 
 |-------:|-------:|-------:|
@@ -138,7 +140,8 @@ summary(myfile$Customer.Lifetime.Value)
 #### Renew.Offer.Type            
 #### Sales.Channel              
 #### Total.Claim.Amount   
-image:!https://github.com/istatkus/momentum-pa-team/blob/master/mmBox_Loc_claim.PNG
+
+image:![https://github.com/istatkus/momentum-pa-team/blob/master/mmhist_claim.PNG]
 #### Vehicle.Class                
 #### Vehicle.Size                
 
