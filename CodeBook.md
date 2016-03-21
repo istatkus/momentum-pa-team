@@ -75,22 +75,28 @@ There are 24 columns of data.
 12. Step 12 write it out
 
 
-##Description of the variables in the tidydata.txt file  
+##Description of the variables in the Marketing Customer Value Analysis File  
 
 #### State   
-| Arizona | California | Nevada | Oregon  | Washington 
-|--------:|-----------:|-------:|--------:|-------------
-| 1703    |    3150    |   882  |     2601|     798
+| Arizona | California | Nevada | Oregon  | Washington |
+|--------:|-----------:|-------:|--------:|-----------:|
+| 1703    |    3150    |   882  |     2601|     798    |
 
 #### Customer.Lifetime.Value  
 summary(myfile$Customer.Lifetime.Value)  
-Min. | 1st Qu. | Median |   Mean | 3rd Qu. |    Max. 
-----------------------------------------------------------
-1898 |  3994   |  5780  |   8005 |   8962  |   83330 
+|Min. | 1st Qu. | Median |   Mean | 3rd Qu. |    Max. |
+|----:|--------:|-------:|-------:|--------:|---------|
+|1898 |  3994   |  5780  |   8005 |   8962  |   83330 |
 
-#### Response                     
+#### Response  
+|  No   | Yes   |
+|------:|------:|
+|7826   |1308   | 
 
 #### Coverage    
+| Basic | Extended | Premium |
+|------:|---------:|--------:|
+| 5568  |   2742 |      824 | 
 
 #### Education                    
 
@@ -101,8 +107,10 @@ Min. | 1st Qu. | Median |   Mean | 3rd Qu. |    Max.
 #### Gender    
 
 #### Income  
- Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
- 0       0   33890   37660   62320   99980 
+| Min. | 1st Qu.| Median |  Mean  | 3rd Qu. |  Max.  | 
+|-----:|-------:|-------:|-------:|--------:|-------:|
+| 0    |   0    |  33890 | 37660  | 62320   | 99980  |
+
 #### Location.Code                
 #### Marital.Status               
 #### Monthly.Premium.Auto         
