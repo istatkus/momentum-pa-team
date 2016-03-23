@@ -140,6 +140,18 @@ image:![Boxplot Location and Total Claim](https://github.com/istatkus/momentum-p
 |93.21929  |  34.40797     |
 
 image:![Scatterplot Premium To Total Claim](https://github.com/istatkus/momentum-pa-team/blob/master/mmScatterPremiumVClaim.PNG)
+
+Pearsons r .632
+using Evans 1996 it appears strong however, it fails the assumptions for Pearsons r
+.00-.19 very weak
+.20-.39 weak
+.40-.59 moderate
+.60-.79 strong
+.80-1.0 very strong
+
+interval - ok, linear - appears to have some, bivariate normal - each variable is skewed right
+investigate Spearmans rank
+
 #### Months.Since.Last.Claim      
 #### Months.Since.Policy.Inception
 #### Number.of.Open.Complaints    
