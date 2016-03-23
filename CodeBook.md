@@ -149,10 +149,20 @@ using Evans 1996 it appears strong however, it fails the assumptions for Pearson
 .60-.79 strong  
 .80-1.0 very strong  
 
-interval - ok, linear - appears to have some, bivariate normal - each variable is skewed right  
-investigate Spearmans rank  
+interval - ok, linear - appears to have some, bivariate normal - FAIL- each variable is skewed right  
+using Spearmans rank   .52   however the data has ties
 
 image:![Histogram of Monthly Premiums](https://github.com/istatkus/momentum-pa-team/blob/master/mmHIstMonthlyPremium.PNG)
+
+lm(formula = myfile$Total.Claim.Amount ~ myfile$Monthly.Premium.Auto)
+
+Coefficients:  
+|(Intercept)       | Slope        |  
+|-----------------:|-------------:|
+|-63.329           |     5.336    |  
+  
+  
+
 
 #### Months.Since.Last.Claim      
 #### Months.Since.Policy.Inception
@@ -178,12 +188,13 @@ image:![Scatterplot Total Claim to LifeTime Value](https://github.com/istatkus/m
 
 ##Sources and Acknowledgements
 
-For more information about this dataset please contact: 
+For more information about this dataset please contact:  Watson Analytics
 
 Acknowledging 
 Coursera Basic Statistics Class, Intro to R
 http://www.statstutor.ac.uk/resources/uploaded/pearsons.pdf
 http://www.r-bloggers.com/what-a-nice-looking-scatterplot/
+http://www.gardenersown.co.uk/education/lectures/r/correl.htm#correlation
 Watson Analytics for the data set
 
 License:
