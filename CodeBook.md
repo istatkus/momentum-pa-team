@@ -11,6 +11,8 @@ Clean and prepare a tidy data set from Watson Analytics using customer demograph
 +https://community.watsonanalytics.com/guide-to-sample-datasets/
 +read.csv("WA_Fn-UseC_-Marketing-Customer-Value-Analysis.csv", header=TRUE)
 
+### R Studio  
+
 ####The First Step is to analyze and understand the data. 
 
 In R we will use various R packages and functions to better understand each variable.  
@@ -184,12 +186,24 @@ image:![Scatterplot Total Claim to LifeTime Value](https://github.com/istatkus/m
 |----------------:|----------:|------------:|--------------:|------------:|-------------:|  
 |    4621   |        163    |       184 |          484  |        1796|          1886 |
 
+image:!(https://github.com/istatkus/momentum-pa-team/blob/master/mmboxVehClasstoLV.png)
+
+image:!(https://github.com/istatkus/momentum-pa-team/blob/master/mmBoxVehClass to Claim.png)
 
 #### Vehicle.Size                
 
+### WATSON ANALYTICS
+
+## Step 1 Explore  
+The tool analyzes each field and assembles various information about them and also offers a few starting points to consider  
+
+image:!(https://github.com/istatkus/momentum-pa-team/blob/master/mmWatDataQuality.png)  
+
+image:!(https://github.com/istatkus/momentum-pa-team/blob/master/mmWatSkewed.png)  
+
+image:!(https://github.com/istatkus/momentum-pa-team/blob/master/mmWatLV.png)
  
- 
- 
+image:!(https://github.com/istatkus/momentum-pa-team/blob/master/mmWatClaimLocation.png)
 
 
 ##Sources and Acknowledgements
