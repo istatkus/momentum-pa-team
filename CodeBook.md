@@ -63,7 +63,8 @@ There are 24 columns of data. Many of the fields are categorical.
 
 #### State   
 These are US States and appear to be a subset of the following  
-table(myfile$State)
+table(myfile$State)  
+
 | Arizona | California | Nevada | Oregon  | Washington |  
 |--------:|-----------:|-------:|--------:|-----------:|  
 | 1703    |    3150    |   882  |     2601|     798    |  
@@ -78,18 +79,21 @@ summary(myfile$Customer.Lifetime.Value)
 #### Response 
 There is no additional documentation on this field.  
 table(myfile$Respose)  
+
 |  No   | Yes   |
 |------:|------:|
 |7826   |1308   | 
 
 #### Coverage    
-table(myfile$Coverage)
+table(myfile$Coverage)  
+
 | Basic | Extended | Premium |
 |------:|---------:|--------:|
 | 5568  |   2742 |      824 | 
 
 #### Education  
 table(myfile$Education)  
+
 |Bachelor  |   College |   Doctor | High School or Below | Master  |
 |---------:|----------:|---------:|---------------------:|--------:|
 |2748  |    2681   |      342 |        2622| 741|  
@@ -98,6 +102,7 @@ table(myfile$Education)
 
 #### EmploymentStatus  
 table(myfile$EmploymentStatus)  
+
 | Disabled  | Employed  |Medical Leave  | Retired  | Unemployed |
 |----------:|----------:|--------------:|---------:|------------|
 | 405       |     5698  |         432   |     282  |      2317  | 
@@ -125,7 +130,7 @@ image:![Boxplot Location and Total Claim](https://github.com/istatkus/momentum-p
 |-------:|-------:|-------:|
 |1369    | 5298   |  2467  |   
 #### Monthly.Premium.Auto 
-This is a continuous numeric field, so we explore additional information on its central tendency and spread.   
+This is a continuous numeric field, so we explore additional information on its central tendency and spread.
 |Mean      | Std Deviation |
 |---------:|--------------:|
 |93.21929  |  34.40797     |
@@ -147,10 +152,10 @@ image:![Histogram of Monthly Premiums](https://github.com/istatkus/momentum-pa-t
 
 lm(formula = myfile$Total.Claim.Amount ~ myfile$Monthly.Premium.Auto)
 
-Coefficients:  
-|(Intercept)       | Slope        |  
+Coefficients:
+|(Intercept)       | Slope        |
 |-----------------:|-------------:|
-|-63.329           |     5.336    |  
+|-63.329           |     5.336    |
   
   
 
