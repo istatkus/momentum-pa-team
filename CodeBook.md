@@ -186,9 +186,9 @@ image:![Scatterplot Total Claim to LifeTime Value](https://github.com/istatkus/m
 |----------------:|----------:|------------:|--------------:|------------:|-------------:|  
 |    4621   |        163    |       184 |          484  |        1796|          1886 |
 
-image:!(https://github.com/istatkus/momentum-pa-team/blob/master/mmboxVehClasstoLV.png)
+image:![BoxPlot Vehicle Class to Lifetime Value](https://github.com/istatkus/momentum-pa-team/blob/master/mmboxVehClasstoLV.png)
 
-image:!(https://github.com/istatkus/momentum-pa-team/blob/master/mmBoxVehClass to Claim.png)
+image:![Boxplot Vehicle Class to Claim](https://github.com/istatkus/momentum-pa-team/blob/master/mmBoxVehClass to Claim.png)
 
 #### Vehicle.Size                
 
@@ -197,13 +197,13 @@ image:!(https://github.com/istatkus/momentum-pa-team/blob/master/mmBoxVehClass t
 ## Step 1 Explore  
 The tool analyzes each field and assembles various information about them and also offers a few starting points to consider  
 
-image:!(https://github.com/istatkus/momentum-pa-team/blob/master/mmWatDataQuality.png)  
+image:![Watson Explore Data Quality](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatDataQuality.png)  
 
-image:!(https://github.com/istatkus/momentum-pa-team/blob/master/mmWatSkewed.png)  
+image:![Watson Identifies all fields with skew](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatSkewed.png)  
 
-image:!(https://github.com/istatkus/momentum-pa-team/blob/master/mmWatLV.png)
+image:![Watson Lifetime Value predictors](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatLV.png)
  
-image:!(https://github.com/istatkus/momentum-pa-team/blob/master/mmWatClaimLocation.png)
+image:![Watson Claim Location](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatClaimLocation.png)
 
 
 ##Sources and Acknowledgements
