@@ -143,6 +143,9 @@ image:![Boxplot Location and Total Claim](https://github.com/istatkus/momentum-p
 #### Total.Claim.Amount   
 
 image:![Histogram Total Claim](https://github.com/istatkus/momentum-pa-team/blob/master/mmhist_claim.PNG)
+
+image:![Scatterplot Total Claim to LifeTime Value](https://github.com/istatkus/momentum-pa-team/blob/master/mmScatterClaimsLifeTimeValue.PNG)
+
 #### Vehicle.Class                
 #### Vehicle.Size                
 
