@@ -181,6 +181,10 @@ image:![Scatterplot Total Claim to LifeTime Value](https://github.com/istatkus/m
 For more information about this dataset please contact: 
 
 Acknowledging 
+Coursera Basic Statistics Class, Intro to R
+http://www.statstutor.ac.uk/resources/uploaded/pearsons.pdf
+http://www.r-bloggers.com/what-a-nice-looking-scatterplot/
+Watson Analytics for the data set
 
 License:
 ========
