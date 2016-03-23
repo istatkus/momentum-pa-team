@@ -152,6 +152,8 @@ using Evans 1996 it appears strong however, it fails the assumptions for Pearson
 interval - ok, linear - appears to have some, bivariate normal - each variable is skewed right
 investigate Spearmans rank
 
+image:![Histogram of Monthly Premiums](https://github.com/istatkus/momentum-pa-team/blob/master/mmHIstMonthlyPremium.PNG)
+
 #### Months.Since.Last.Claim      
 #### Months.Since.Policy.Inception
 #### Number.of.Open.Complaints    
