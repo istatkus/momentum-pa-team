@@ -64,9 +64,9 @@ There are 24 columns of data. Many of the fields are categorical.
 #### State   
 These are US States and appear to be a subset of the following  
 table(myfile$State)  
-| Arizona | California | Nevada | Oregon  | Washington |
-|--------:|-----------:|-------:|--------:|-----------:|
-| 1703    |    3150    |   882  |     2601|     798    |
+| Arizona | California | Nevada | Oregon  | Washington |  
+|--------:|-----------:|-------:|--------:|-----------:|  
+| 1703    |    3150    |   882  |     2601|     798    |  
 
 #### Customer.Lifetime.Value  
 summary(myfile$Customer.Lifetime.Value)   
