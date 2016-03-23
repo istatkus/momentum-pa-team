@@ -1,24 +1,34 @@
-## Codebook Marketing Customer Value Analysis
+### Codebook Marketing Customer Value Analysis
 
-### title: Codebook Customer Value Analysis
+### title: Momemtum Customer Value Analysis
 ##### date: March 2016
 
-## Project Description
+### Project Description
 
-Clean and prepare a tidy data set from Watson Analytics using customer demographics to predict buying behavior.  
-+The raw data is a set of files from: 
+Clean and prepare a tidy data set from Watson Analytics using customer demographics to predict Customer Value or Identify variables that are correlated or predictors of value.  We will use the same data set in R, Watson Analytics and SPSS.
+
++The raw data is a set of files from Watson Analytics with categorical and numeric data: 
 +https://community.watsonanalytics.com/guide-to-sample-datasets/
 +read.csv("WA_Fn-UseC_-Marketing-Customer-Value-Analysis.csv", header=TRUE)
 
-####The consumer of this tidy data set requests:
+####The First Step is to analyze and understand the data. 
 
-* SUBJECT 
-+ For 
-+ For 
+In R we will use various R packages and functions to better understand each variable.  
+* Set the environment and working directory. Some of the packages used include  
++ install.packages("xlsx") 
++ library(xlsx) for downloading and reading Excel spreadsheets
++ install.packages("ggplot2")
++ library(ggplot2) for plotting charts
++ require(stats)
++ library(dplyr) 
++ library(tidyr)
++ library(stringr)
++ library(reshape2)
++ +library(rpart)
 
-#### SUBJECTS 
+#### Variables 
 The data was collected on customers.
-There are 24 columns of data.
+There are 24 columns of data. Many of the fields are categorical.
 
 +> str(myfile)
 +'data.frame':	9134 obs. of  24 variables:
@@ -48,65 +58,46 @@ There are 24 columns of data.
 + $ Vehicle.Size                 : Factor w/ 3 levels "Large","Medsize",..: 2 2 2 2 2 2 2 2 2 2 .
 
 
-##Creating the tidy datafile
-* Set the environment and working directory
-+ install.packages("xlsx")
-+ library(xlsx)
-+ install.packages("ggplot2")
-+ library(ggplot2)
-+ require(stats)
-+ library(dplyr)
-+ library(tidyr)
-+ library(stringr)
-+ library(reshape2)
 
-
-1. Step 1: Get the data by Downloading 
-2. Step 2: Prepare the table for 
-3. Step 3: 
-4. Step 4: Read 
-5. Step 5: 
-6. Step 6:       
-7. Step 7: 
-8. Step 8: 
-9. Step 9: 
-10. Step 10 :
-11. Step11: 
-12. Step 12 write it out
-
-
-##Description of the variables in the Marketing Customer Value Analysis File  
+### Description of the variables in the Marketing Customer Value Analysis File  
 
 #### State   
+These are US States and appear to be a subset of the following  
+table(myfile$State)  
 | Arizona | California | Nevada | Oregon  | Washington |
 |--------:|-----------:|-------:|--------:|-----------:|
 | 1703    |    3150    |   882  |     2601|     798    |
 
 #### Customer.Lifetime.Value  
-summary(myfile$Customer.Lifetime.Value) 
+summary(myfile$Customer.Lifetime.Value)   
 
 |Min. | 1st Qu. | Median |   Mean | 3rd Qu. |    Max. |
 |----:|--------:|-------:|-------:|--------:|---------|
 |1898 |  3994   |  5780  |   8005 |   8962  |   83330 |
 
-#### Response  
+#### Response 
+There is no additional documentation on this field.  
+table(myfile$Respose)  
 |  No   | Yes   |
 |------:|------:|
 |7826   |1308   | 
 
 #### Coverage    
+table(myfile$Coverage)
 | Basic | Extended | Premium |
 |------:|---------:|--------:|
 | 5568  |   2742 |      824 | 
 
-#### Education                    
+#### Education  
+table(myfile$Education)  
 |Bachelor  |   College |   Doctor | High School or Below | Master  |
 |---------:|----------:|---------:|---------------------:|--------:|
 |2748  |    2681   |      342 |        2622| 741|  
 
 #### Effective.To.Date            
 
-#### EmploymentStatus    
+#### EmploymentStatus  
+table(myfile$EmploymentStatus)  
 | Disabled  | Employed  |Medical Leave  | Retired  | Unemployed |
 |----------:|----------:|--------------:|---------:|------------|
 | 405       |     5698  |         432   |     282  |      2317  | 
@@ -122,7 +113,7 @@ image:![Employment Status and Claim](https://github.com/istatkus/momentum-pa-tea
 | 0    |   0    |  33890 | 37660  | 62320   | 99980  |
 
 #### Location.Code   
-
+table(myfile$Location.Code)  
 |Rural    |Suburban |  Urban  | 
 |--------:|--------:|--------:|
 |1773     |  5779   |  1582   |  
@@ -134,11 +125,11 @@ image:![Boxplot Location and Total Claim](https://github.com/istatkus/momentum-p
 |-------:|-------:|-------:|
 |1369    | 5298   |  2467  |   
 #### Monthly.Premium.Auto 
-
+This is a continuous numeric field, so we explore additional information on its central tendency and spread.   
 |Mean      | Std Deviation |
 |---------:|--------------:|
 |93.21929  |  34.40797     |
-
+To see if there is any linear relationship to Claim, we use a scatterplot.
 image:![Scatterplot Premium To Total Claim](https://github.com/istatkus/momentum-pa-team/blob/master/mmScatterPremiumVClaim.PNG)
 
 Pearsons r .632  
@@ -178,7 +169,14 @@ image:![Histogram Total Claim](https://github.com/istatkus/momentum-pa-team/blob
 
 image:![Scatterplot Total Claim to LifeTime Value](https://github.com/istatkus/momentum-pa-team/blob/master/mmScatterClaimsLifeTimeValue.PNG)
 
-#### Vehicle.Class                
+#### Vehicle.Class  
+
+
+|Four-Door Car    |Luxury Car |   Luxury SUV|    Sports Car |          SUV|  Two-Door Car|  
+|----------------:|----------:|------------:|--------------:|------------:|-------------:|  
+|    4621   |        163    |       184 |          484  |        1796|          1886 |
+
+
 #### Vehicle.Size                
 
  
