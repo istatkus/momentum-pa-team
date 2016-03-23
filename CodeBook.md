@@ -122,16 +122,24 @@ image:![Employment Status and Claim](https://github.com/istatkus/momentum-pa-tea
 | 0    |   0    |  33890 | 37660  | 62320   | 99980  |
 
 #### Location.Code   
+
 |Rural    |Suburban |  Urban  | 
 |--------:|--------:|--------:|
 |1773     |  5779   |  1582   |  
 image:![Boxplot Location and Total Claim](https://github.com/istatkus/momentum-pa-team/blob/master/mmBox_Loc_claim.PNG)
 
 #### Marital.Status 
+
 |Divorced|Married | Single | 
 |-------:|-------:|-------:|
 |1369    | 5298   |  2467  |   
-#### Monthly.Premium.Auto         
+#### Monthly.Premium.Auto 
+
+|Mean      | Std Deviation |
+|---------:|--------------:|
+|93.21929  |  34.40797     |
+
+image:![Scatterplot Premium To Total Claim](https://github.com/istatkus/momentum-pa-team/blob/master/mmScatterPremiumVClaim.PNG)
 #### Months.Since.Last.Claim      
 #### Months.Since.Policy.Inception
 #### Number.of.Open.Complaints    
