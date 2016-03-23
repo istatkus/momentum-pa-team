@@ -118,7 +118,8 @@ image:![Employment Status and Claim](https://github.com/istatkus/momentum-pa-tea
 | 0    |   0    |  33890 | 37660  | 62320   | 99980  |
 
 #### Location.Code   
-table(myfile$Location.Code)  
+table(myfile$Location.Code) 
+
 |Rural    |Suburban |  Urban  | 
 |--------:|--------:|--------:|
 |1773     |  5779   |  1582   |  
@@ -130,7 +131,8 @@ image:![Boxplot Location and Total Claim](https://github.com/istatkus/momentum-p
 |-------:|-------:|-------:|
 |1369    | 5298   |  2467  |   
 #### Monthly.Premium.Auto 
-This is a continuous numeric field, so we explore additional information on its central tendency and spread.
+This is a continuous numeric field, so we explore additional information on its central tendency and spread.  
+
 |Mean      | Std Deviation |
 |---------:|--------------:|
 |93.21929  |  34.40797     |
@@ -152,7 +154,8 @@ image:![Histogram of Monthly Premiums](https://github.com/istatkus/momentum-pa-t
 
 lm(formula = myfile$Total.Claim.Amount ~ myfile$Monthly.Premium.Auto)
 
-Coefficients:
+Coefficients:  
+
 |(Intercept)       | Slope        |
 |-----------------:|-------------:|
 |-63.329           |     5.336    |
@@ -202,4 +205,4 @@ Watson Analytics for the data set
 
 License:
 ========
-Use of this dataset is for testing and training on Watson Analytics which we are comparing to R and SPSS
+Use of this dataset is for comparing Watson Analytics to R and SPSS
