@@ -221,6 +221,9 @@ Watson identified top field associations with one click. After a few hours of wo
 
 image:![Watson TopField](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatTopField.png)  
 
+Watson also identified the association between Claim and Premium and identified a pearsons r of .63
+
+image:![Watson TopField](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatClaimPrem.png)  
 
 ##Sources and Acknowledgements
 
