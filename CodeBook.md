@@ -186,7 +186,7 @@ image:![Scatterplot Total Claim to LifeTime Value](https://github.com/istatkus/m
 |----------------:|----------:|------------:|--------------:|------------:|-------------:|  
 |    4621   |        163    |       184 |          484  |        1796|          1886 |
 
-image:![BoxPlot Vehicle Class to Lifetime Value](https://github.com/istatkus/momentum-pa-team/blob/master/mmboxVehClasstoLV.png)
+image:![BoxPlot Vehicle Class to Lifetime Value](https://github.com/istatkus/momentum-pa-team/blob/master/mmboxVehClasstoLV.PNG)
 
 image:![Boxplot Vehicle Class to Claim](https://github.com/istatkus/momentum-pa-team/blob/master/mmBoxVehClass%20to%20Claim.PNG)
 
