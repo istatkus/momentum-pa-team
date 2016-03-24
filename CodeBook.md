@@ -197,17 +197,27 @@ image:![Boxplot Vehicle Class to Claim](https://github.com/istatkus/momentum-pa-
 ## Step 1 Explore  
 The tool analyzes each field and assembles various information about them and also offers a few starting points to consider  
 
+image:![Watson Explore Suggestion](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatSuggestion.png)  
+
+There are several presentations for data quality  
+
 image:![Watson Explore Data Quality](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatDataQuality.png)  
 
 image:![Watson Explore Data2](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatDQ2.png)  
 
-image:![Watson Explore Suggestion](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatSuggestion.png)  
+I was interested in the monthly premium because my analysis identified it as skewed. In R the histogram graphically displays.
 
 image:![Watson Identifies all fields with skew](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatSkewed.png)  
 
-image:![Watson Lifetime Value predictors](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatLV.png)
+LifeTime Value and Total Claim amount were my main interest points for this analysis of customer value. 
+
+image:![Watson Lifetime Value predictors](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatLV.png)  
+
+Total Claim could be an indicator of lower value, but it was not a strong predictor of LifeTime Value
  
 image:![Watson Claim Location](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatClaimLocation.png)
+
+Watson identified top field associations with one click. After a few hours of working with the data, my r analysis had started to identify a few of the same.
 
 image:![Watson TopField](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatTopField.png)  
 
