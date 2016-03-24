@@ -199,11 +199,17 @@ The tool analyzes each field and assembles various information about them and al
 
 image:![Watson Explore Data Quality](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatDataQuality.png)  
 
+image:![Watson Explore Data2](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatDQ2.png)  
+
+image:![Watson Explore Suggestion](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatSuggestion.png)  
+
 image:![Watson Identifies all fields with skew](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatSkewed.png)  
 
 image:![Watson Lifetime Value predictors](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatLV.png)
  
 image:![Watson Claim Location](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatClaimLocation.png)
+
+image:![Watson TopField](https://github.com/istatkus/momentum-pa-team/blob/master/mmWatTopField.png)  
 
 
 ##Sources and Acknowledgements
