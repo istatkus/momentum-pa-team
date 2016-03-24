@@ -153,27 +153,42 @@ plot(myfile$Income/1000, myfile$Customer.Lifetime.Value/1000,
      xlab="Income 000s", 
      ylab="Lifetime Value 000s", 
      main="Income V Value", pch=2, cex.main=1.5, frame.plot=FALSE , col="green")
+##
+## no apparent association
+##
 plot(myfile$Number.of.Policies, myfile$Customer.Lifetime.Value/1000,
      xlab="number of policies", 
      ylab="Lifetime Value 000s", 
      main="Nbr Policies V LifeTime Value", cex.main=1.5,  col="blue")
+## most have 2 policies and that has greatest variance but no linear 
+## association
+##
 plot(myfile$Months.Since.Policy.Inception, myfile$Customer.Lifetime.Value/1000, 
      xlab="Months policy inception", 
      ylab="Lifetime Value 000s", 
      main="Months since Inception V Value",  col="green")
+##nothing here either
+##
 plot(myfile$Number.of.Open.Complaints, myfile$Total.Claim.Amount/1000, 
      xlab="Nbr Complaints", 
      ylab="Total Claim Amt 000s", 
      main="Open Complaints V Claim",  col="black")
+## possibly some association as the complaints go up total claim goes down
+## but also looks skewed
+##
 ## Premium and Claim
 plot(myfile$Monthly.Premium.Auto, myfile$Total.Claim.Amount/1000, 
      xlab="Monthly Premium", 
      ylab="Total Claim Amt 000s", 
      main="Premium V Claim", pch=21,  col="blue")
+## possibly some linear with maybe a second variable affecting it
 (lm(myfile$Total.Claim.Amount ~ myfile$Monthly.Premium.Auto))
-       
+## this did not work to abline but it did give a slope 5.3
+##       
 hist(myfile$Monthly.Premium.Auto)
-## caculate Perasons R for Premium and Claim
+## Highly skewed
+##
+## calculate Perasons R for Premium and Claim
 premMean <- mean(myfile$Monthly.Premium.Auto)
 premMean
 premSD <- sd(myfile$Monthly.Premium.Auto)
@@ -188,11 +203,16 @@ ZxZy <- premZ*claimZ
 ## it is .632 so positive correlation
 r <- sum(ZxZy)/9133
 r
-## or you can just use the cor.test
+##
+## or you can just use the cor.test and save yourself lots of effort
 cor.test(myfile$Monthly.Premium.Auto, myfile$Total.Claim.Amount)
+##
+## since its skewed try spearmans rank
 ##
 cor.test(myfile$Monthly.Premium.Auto, myfile$Total.Claim.Amount,method = "spearman")
 ## 
+##
+## Lets  try a model - this is a decision tree 
 ### Catagorical Data
 # grow tree
 fit <- rpart(myfile$Coverage ~ myfile$EmploymentStatus + 
@@ -208,17 +228,20 @@ plot(fit, uniform=TRUE,
      main="Classification Tree for Response")
 text(fit, use.n=TRUE, all=TRUE, cex=.8)
 
-# create attractive postscript plot of tree
+# create attractive postscript plot of tree - not sure this worked, cant view my postscript
 post(fit, file = "C:/Users/irene/Desktop/CourseraDS/TeamTest/tree.ps",
      title = "Classification Tree for Response")
-
-
+##
+## need to download a ps viewer or maybe theres another package to try
+##
 ## Vehicle class
 table(myfile$Vehicle.Class)
 plot(myfile$Vehicle.Class, myfile$Total.Claim.Amount/1000, 
      xlab="Vehicle Class", 
      ylab="Total Claim Amt 000s", 
      main="Vehicle Class V Claim", pch=21,  col="blue")
+##
+## YEAH - finally some association
 ##
 plot(myfile$Vehicle.Class, myfile$Customer.Lifetime.Value/1000, 
      xlab="Vehicle Class", 
