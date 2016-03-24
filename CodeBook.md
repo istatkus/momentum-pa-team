@@ -142,7 +142,7 @@ To see if there is any linear relationship to Claim, we use a scatterplot.
 image:![Scatterplot Premium To Total Claim](https://github.com/istatkus/momentum-pa-team/blob/master/mmScatterPremiumVClaim.PNG)
 
 Pearsons r .632  
-using Evans 1996 it appears strong however, it fails the assumptions for Pearsons r  
+using James R Evans, author several Businmess Analytics books, 1996 A Pearsons R of .63 appears strong however, it fails the assumptions for Pearsons r for normality    
 .00-.19 very weak  
 .20-.39 weak  
 .40-.59 moderate  
