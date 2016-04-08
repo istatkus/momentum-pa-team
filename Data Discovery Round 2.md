@@ -27,6 +27,7 @@ In R we will use various R packages and functions to better understand each vari
 + library(stringr)
 + library(reshape2)
 + library(rpart)  
++ 
 #### Additional Insights into the data
 The data sample was from a Marketing offer Campaign
 It contains the Renewal Offer 
@@ -77,10 +78,10 @@ table(myfile$Respose)
 
 ### Renewal.Offer.Type
 table(myfile$Response,myfile$Renew.Offer.Type)  
-|Offer1  |   Offer2  |   Offer3 |   Offer4  |  
-|--------|-----------|----------|-----------|
-|   No   |     3158  |   2242 |   1402  | 1024  |  
-|  Yes   |     594   |    684 |   30  |    0  |
+|Offer1  |   Offer2  |   Offer3 |   Offer4  |
+|-------:|----------:|---------:|----------:|
+|   No   |     3158  |   2242 |   1402  | 1024  |
+|  Yes   |     594   |    684 |   30  |    0  |  
 
 ### Education  
 table(myfile$Education)  
@@ -101,10 +102,12 @@ table(myfile$EmploymentStatus)
 sum_rrpYMatrix <- dcast(sum_rrpYp, Renew.Offer.Type ~ Number.of.Policies,  
 + value.var='percentYes', fun.aggregate=sum)  
 > sum_rrpYMatrix  
-  Renew.Offer.Type     1     2     3     4     5     6     7     8     9  
-1           Offer1 0.171 0.180 0.139 0.127 0.162 0.103 0.093 0.139 0.181  
-2           Offer2 0.256 0.224 0.178 0.161 0.244 0.211 0.309 0.155 0.288  
-3           Offer3 0.047 0.017 0.000 0.000 0.000 0.000 0.000 0.000 0.000  
-4           Offer4 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000  
->   
+|  Renew.Offer.Type |    1  |   2   |  3  |   4   |  5   |  6   |  7  |   8   |  9   |
+|------------------:|------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
+|           Offer1| 0.171 | 0.180 | 0.139 | 0.127 | 0.162 | 0.103 |0.093 |0.139 |0.181 | 
+|           Offer2| 0.256 | 0.224 | 0.178 | 0.161 | 0.244 | 0.211 |0.309 |0.155 |0.288  |
+|           Offer3| 0.047 | 0.017 | 0.000 | 0.000 | 0.000 | 0.000 |0.000 |0.000 |0.000  |
+|           Offer4| 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |0.000 |0.000 |0.000  |  
+>    
+
 
