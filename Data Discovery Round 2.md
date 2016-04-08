@@ -27,15 +27,18 @@ In R we will use various R packages and functions to better understand each vari
 + library(stringr)
 + library(reshape2)
 + library(rpart)  
-+ 
+
 #### Additional Insights into the data
+
 The data sample was from a Marketing offer Campaign
 It contains the Renewal Offer 
 The Response Yes/No
 Does not appear to contain any R,F,M characteristics
 Contains a collection of numeric, catagorical data
 Which variables have a relationship with Response
+
 #### Variables 
+
 The data was collected on customers.
 There are 24 columns of data. Many of the fields are categorical.
 
@@ -76,8 +79,8 @@ table(myfile$Respose)
 |------:|------:|
 |7826   |1308   | 
 
-### Renewal.Offer.Type
-table(myfile$Response,myfile$Renew.Offer.Type)  
+### Renewal.Offer.Type  
+table(myfile$Response,myfile$Renew.Offer.Type)   
 |Offer1  |   Offer2  |   Offer3 |   Offer4  |
 |-------:|----------:|---------:|----------:|
 |   No   |     3158  |   2242 |   1402  | 1024  |
@@ -102,6 +105,7 @@ table(myfile$EmploymentStatus)
 sum_rrpYMatrix <- dcast(sum_rrpYp, Renew.Offer.Type ~ Number.of.Policies,  
 + value.var='percentYes', fun.aggregate=sum)  
 > sum_rrpYMatrix  
+
 |  Renew.Offer.Type |    1  |   2   |  3  |   4   |  5   |  6   |  7  |   8   |  9   |
 |------------------:|------:|------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |           Offer1| 0.171 | 0.180 | 0.139 | 0.127 | 0.162 | 0.103 |0.093 |0.139 |0.181 | 
