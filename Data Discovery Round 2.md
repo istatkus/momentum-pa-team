@@ -113,6 +113,19 @@ sum_rrpYMatrix <- dcast(sum_rrpYp, Renew.Offer.Type ~ Number.of.Policies,
 |           Offer2| 0.256 | 0.224 | 0.178 | 0.161 | 0.244 | 0.211 |0.309 |0.155 |0.288  |
 |           Offer3| 0.047 | 0.017 | 0.000 | 0.000 | 0.000 | 0.000 |0.000 |0.000 |0.000  |
 |           Offer4| 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |0.000 |0.000 |0.000  |  
->    
+    
+
+image:![Plot Offer Policy Yes Percent](https://github.com/istatkus/momentum-pa-team/blob/master/Rplot%20Offer%20Policy2.png)
+
+image:![Plot Offer Policy Yes Response](https://github.com/istatkus/momentum-pa-team/blob/master/Rplot%20Offer%20Policy.png)
+
+#### Grow a Tree
+
+image:![Tree For Response](https://github.com/istatkus/momentum-pa-team/blob/master/Rplot%20Tree.png)
+
+
+
+
+
 
 
