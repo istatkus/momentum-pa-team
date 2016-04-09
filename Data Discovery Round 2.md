@@ -82,8 +82,8 @@ table(myfile$Respose)
 ### Renewal.Offer.Type  
 table(myfile$Response,myfile$Renew.Offer.Type)  
 
-|Offer1  |   Offer2  |   Offer3 |   Offer4  |
-|-------:|----------:|---------:|----------:|
+|Response |Offer1  |   Offer2  |   Offer3 |   Offer4  |
+|-------:|----------:|---------:|----------:|--------:|
 |   No   |     3158  |   2242 |   1402  | 1024  |
 |  Yes   |     594   |    684 |   30  |    0  |  
 
