@@ -123,7 +123,7 @@ image:![Plot Offer Policy Yes Response](https://github.com/istatkus/momentum-pa-
 
 image:![Tree For Response](https://github.com/istatkus/momentum-pa-team/blob/master/Rplot%20Tree.png)  
 
-image:![Tree For Offer]https://github.com/istatkus/momentum-pa-team/blob/master/Rplotoffer.png)  
+image:![Tree For Offer](https://github.com/istatkus/momentum-pa-team/blob/master/Rplotoffer.png)  
 
 
 
