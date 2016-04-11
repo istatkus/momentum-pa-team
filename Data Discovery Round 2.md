@@ -5,7 +5,16 @@
 
 ### Project Description
 
-Identify characteristics of customers who positively responded to the renewal offer campaign.
+Identify characteristics of members who positively responded to the renewal offer campaign.  
+Background - Marketing seeks to identify the characteristics of customers responding to offers in order to better tailor which offers are made to which customers.
+Business - The expectation is that the analytics will help shed light on the characteristics in order to create future offers to test the hypothesis
+Business Benefits - Improved response to offers
+Project Visions - Expand analytics to tailor various other communications to members based on characteristics
+Objectives - Research and understand the data and develo several models to answer questions about the member base.
+Success - Better understanding of the data , the development of several models to test
+Stakeholders - The Marketing Team collecting the data and analyzing the results
+
+
 
 +The raw data is a set of files from Watson Analytics with categorical and numeric data: 
 +https://community.watsonanalytics.com/guide-to-sample-datasets/
