@@ -5,7 +5,7 @@
 
 ### Business Understanding (CRISP) - USE-CASE (SMAM) Project Description
 
-Identify characteristics of members who positively responded to the renewal offer campaign to tailor Offers to increase response.    
+Identify characteristics of members who positively responded to the renewal or new offer campaign to tailor Offers to increase response.  Increasing number of policies or renewals will increase customer lifetime value.      
 Background - Marketing seeks to identify the characteristics of customers responding to offers in order to better tailor which offers are made to which customers.  
 Business - The expectation is that the analytics will help shed light on the characteristics in order to create future offers to test the hypothesis  
 Business Benefits - Improved response to offers  
