@@ -127,8 +127,8 @@ sum_rrpYMatrix <- dcast(sum_rrpYp, Renew.Offer.Type ~ Number.of.Policies,
     
 Of those with 1 policy reveiving Offer 1, 17% responded  
 
-|   Renew.Offer.Type | Number.of.Policies |  No  | Yes |
-|-------------------:|-------------------:|-----:|-----:|
+|   Renew.Offer.Type | Number.of.Policies |  No  | Yes | PercentYes |
+|-------------------:|-------------------:|-----:|-----:|----------:|
 |       Offer1       |          1| 875| 180| 0.170616114 |
 |       Offer1       |          2| 873| 192| 0.18028169 |  
   
