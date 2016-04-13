@@ -140,6 +140,7 @@ Offer 4 was not responded to by any member
 Offer 3 was responded to by members with only 1 or 2 policies  
 Offer 2 and Offer 1 had additional Yes response across the range of number of policies   
 
+image:![EmploymentStatus](https://github.com/istatkus/momentum-pa-team/blob/master/Emp%20Status.PNG)
 
 #### Grow a Tree
 
