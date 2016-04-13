@@ -125,6 +125,14 @@ sum_rrpYMatrix <- dcast(sum_rrpYp, Renew.Offer.Type ~ Number.of.Policies,
 |           Offer3| 0.047 | 0.017 | 0.000 | 0.000 | 0.000 | 0.000 |0.000 |0.000 |0.000  |
 |           Offer4| 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |0.000 |0.000 |0.000  |  
     
+Of those with 1 policy reveiving Offer 1, 17% responded  
+
+|   Renew.Offer.Type | Number.of.Policies |  No | Yes |	  					
+|       Offer1       |          1| 875| 180| 0.170616114 |
+|       Offer1       |          2| 873| 192| 0.18028169 |
+
+
+    
     
 #### Model Requirements (SMAM)
 
