@@ -3,9 +3,9 @@
 ### title: Momentum Customer Value Analysis
 ##### date: March 2016
 
-### Project Description
+### Business Understanding (CRISP) - USE-CASE (SMAM) Project Description
 
-Identify characteristics of members who positively responded to the renewal offer campaign.  
+Identify characteristics of members who positively responded to the renewal offer campaign to tailor Offers to incraese response.    
 Background - Marketing seeks to identify the characteristics of customers responding to offers in order to better tailor which offers are made to which customers.  
 Business - The expectation is that the analytics will help shed light on the characteristics in order to create future offers to test the hypothesis  
 Business Benefits - Improved response to offers  
@@ -14,7 +14,9 @@ Objectives - Research and understand the data and develo several models to answe
 Success - Better understanding of the data , the development of several models to test  
 Stakeholders - The Marketing Team collecting the data and analyzing the results  
 
+### Modeleling (CRISP) - Model Requirements (SMAM)
 
+In addition to the Offer and Response, Marketing collected a set of characteristics of our members.
 
 +The raw data is a set of files from Watson Analytics with categorical and numeric data: 
 +https://community.watsonanalytics.com/guide-to-sample-datasets/
