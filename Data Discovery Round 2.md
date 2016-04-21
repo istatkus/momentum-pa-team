@@ -5,7 +5,10 @@
 
 ### Business Understanding (CRISP) - USE-CASE (SMAM) Project Description
 
-Identify characteristics of members who positively responded to the renewal or new offer campaign to tailor Offers to increase response.  Increasing number of policies or renewals will increase customer lifetime value.      
+Identify characteristics of members who positively responded to the renewal or new offer campaign to tailor Offers to increase response.  Increasing number of policies or renewals will increase customer lifetime value.  
+
+Identify characteristics for Sales Channel and Positive Response.  
+
 Background - Marketing seeks to identify the characteristics of customers responding to offers in order to better tailor which offers are made to which customers.  
 Business - The expectation is that the analytics will help shed light on the characteristics in order to create future offers to test the hypothesis  
 Business Benefits - Improved response to offers  
@@ -152,6 +155,31 @@ Offer 2 and Offer 1 had additional Yes response across the range of number of po
 image:![EmploymentStatus](https://github.com/istatkus/momentum-pa-team/blob/master/Emp%20Status.PNG)
 
 #### Grow a Tree
+
+#### Solve for Channel
+
+
+myfileYes <-filter(myfile, Response =='Yes'  )  
+####str(myfileYes)  
+myfileYes <-filter(myfileYes, Renew.Offer.Type =='Offer1'  )  
+fitSC <- rpart( Sales.Channel~   
+                 EmploymentStatus + State +   
+                 Vehicle.Class + Number.of.Policies +  
+                 Location.Code + Vehicle.Size +  
+                 Gender + Education ,  
+               data = myfileYes, control = rpart.control(cp = 0.015))  
+#### display the complexity parametr table  
+fitSC$cptable  
+
+#### Prune  
+prunedtreeSC = prune(fitSC,cp=.02)  
+prunedtreeSC$cptable  
+printcp(prunedtreeSC) # display the results  
+prp(prunedtreeSC, type = 2,extra=100, uniform=F, branch=0, yesno=F, border.col=0, xsep="/")  
+
+image:![EmploymentStatus](https://github.com/istatkus/momentum-pa-team/blob/master/Emp%20Status.PNG)
+
+#### Redo Response and  Offer
 
 image:![Tree For Response](https://github.com/istatkus/momentum-pa-team/blob/master/Rplot%20Tree.png)  
 
