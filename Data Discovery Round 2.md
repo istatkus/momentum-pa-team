@@ -85,7 +85,7 @@ There are 24 columns of data. Many of the fields are categorical.
 
 
 
-### Description of the variables in the Marketing Customer Value Analysis File  
+### Description of the variables  
 #### Response 
 table(myfile$Respose)  
 
@@ -101,20 +101,6 @@ table(myfile$Response,myfile$Renew.Offer.Type)
 |   No   |     3158  |   2242 |   1402  | 1024  |
 |  Yes   |     594   |    684 |   30  |    0  |  
 
-### Education  
-table(myfile$Education)  
-
-|Bachelor  |   College |   Doctor | High School or Below | Master  |
-|---------:|----------:|---------:|---------------------:|--------:|
-|2748  |    2681   |      342 |        2622| 741|  
-
-
-#### EmploymentStatus  
-table(myfile$EmploymentStatus)  
-
-| Disabled  | Employed  |Medical Leave  | Retired  | Unemployed |
-|----------:|----------:|--------------:|---------:|------------|
-| 405       |     5698  |         432   |     282  |      2317  | 
 
 #### Number.of.Policies
 sum_rrpYMatrix <- dcast(sum_rrpYp, Renew.Offer.Type ~ Number.of.Policies,  
@@ -197,6 +183,22 @@ image:![Channel](https://github.com/istatkus/momentum-pa-team/blob/master/tree%2
 |Four-Door Car    |Luxury Car |   Luxury SUV|    Sports Car |          SUV|  Two-Door Car|  
 |----------------:|----------:|------------:|--------------:|------------:|-------------:|  
 |    4621   |        163    |       184 |          484  |        1796|          1886 |
+
+### Education  
+table(myfile$Education)  
+
+|Bachelor  |   College |   Doctor | High School or Below | Master  |
+|---------:|----------:|---------:|---------------------:|--------:|
+|2748  |    2681   |      342 |        2622| 741|  
+
+
+#### EmploymentStatus  
+table(myfile$EmploymentStatus)  
+
+| Disabled  | Employed  |Medical Leave  | Retired  | Unemployed |
+|----------:|----------:|--------------:|---------:|------------|
+| 405       |     5698  |         432   |     282  |      2317  | 
+
 
 image:![BoxPlot Vehicle Class to Lifetime Value](https://github.com/istatkus/momentum-pa-team/blob/master/mmboxVehClasstoLV.PNG)
 
