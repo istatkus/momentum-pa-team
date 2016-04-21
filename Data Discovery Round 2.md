@@ -178,6 +178,15 @@ printcp(prunedtreeSC) # display the results
 prp(prunedtreeSC, type = 2,extra=100, uniform=F, branch=0, yesno=F, border.col=0, xsep="/")  
 
 image:![Channel](https://github.com/istatkus/momentum-pa-team/blob/master/tree%20Sales%20Channel.PNG)
+#### Vehicle.Class  
+
+
+|Four-Door Car    |Luxury Car |   Luxury SUV|    Sports Car |          SUV|  Two-Door Car|  
+|----------------:|----------:|------------:|--------------:|------------:|-------------:|  
+|    4621   |        163    |       184 |          484  |        1796|          1886 |
+
+image:![BoxPlot Vehicle Class to Lifetime Value](https://github.com/istatkus/momentum-pa-team/blob/master/mmboxVehClasstoLV.PNG)
+
 
 #### Redo Response and  Offer
 
