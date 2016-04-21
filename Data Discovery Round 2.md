@@ -140,9 +140,9 @@ Offer 2 and Offer 1 had additional Yes response across the range of number of po
 
 image:![EmploymentStatus](https://github.com/istatkus/momentum-pa-team/blob/master/Emp%20Status.PNG)
 
-#### Grow a Tree
+### Grow a Tree
 
-#### Solve for Channel
+#### Solve for Channel. Given Positive Response and Offer1, which attributes are predictive for Channel.
 
 
 myfileYes <-filter(myfile, Response =='Yes'  )  
