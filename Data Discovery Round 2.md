@@ -177,7 +177,7 @@ prunedtreeSC$cptable
 printcp(prunedtreeSC) # display the results  
 prp(prunedtreeSC, type = 2,extra=100, uniform=F, branch=0, yesno=F, border.col=0, xsep="/")  
 
-image:![EmploymentStatus](https://github.com/istatkus/momentum-pa-team/blob/master/Emp%20Status.PNG)
+image:![Channel](https://github.com/istatkus/momentum-pa-team/blob/master/tree%20Sales%20Channel.PNG)
 
 #### Redo Response and  Offer
 
