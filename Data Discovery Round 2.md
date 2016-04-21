@@ -177,6 +177,19 @@ prunedtreeSC$cptable
 printcp(prunedtreeSC) # display the results  
 prp(prunedtreeSC, type = 2,extra=100, uniform=F, branch=0, yesno=F, border.col=0, xsep="/")  
 
+Classification tree:  
+rpart(formula = Sales.Channel ~ EmploymentStatus + State + Vehicle.Class +   
+    Number.of.Policies + Location.Code + Vehicle.Size + Gender +   
+    Education, data = myfileYes, control = rpart.control(cp = 0.015))  
+  
+Variables actually used in tree construction:  
+[1] Education        EmploymentStatus Vehicle.Class     
+
+Root node error: 258/594 = 0.43434  
+
+n= 594   
+
+
 image:![Channel](https://github.com/istatkus/momentum-pa-team/blob/master/tree%20Sales%20Channel.PNG)
 #### Vehicle.Class  
 
